@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #07292A; /* Green background for the header */
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav h1 {
+    margin-right: 20px;
+    font-size: 24px;
+    color: white;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin-left: 700px;
+  }
+  li:hover{
+  background-color: #60dbbe;
+  color:#07292A;
+  }
+  
+  
+  nav ul li {
+    color: white;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+    padding: 0px;
+  }
+  
+  .side {
+    width: 30%;
+    padding: 20px;
+    background-color: #60dbbe;
+  }
+  
+  article {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+  }
+  article img {
+    width: 100%;
+    height: 100%; /* Keeps the image aspect ratio */
+    display: block;
+    margin-bottom: 10px;
+    background-size: cover; 
+    /* Adds some space between the image and the text */
+  }
+  
+  
+  
+  footer {
+    background-color: #07292A;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+  
+    .main-content {
+        flex-direction: column;
+    }
+  
+    .side {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #ccc;
+    }
+  
+    article {
+        width: 100%;
+    }
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .container{
+    position: relative;
+    text-align: center;
+    color: white;
+    opacity: 95%;
+  }
+  .centered {
+    position: absolute;
+    top: 25%; /* Adjust as needed to move text further down or up */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the text horizontally */
+    color:#07292A; /* Text color */
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .but{
+    position: absolute;
+    top: 40%; /* Adjust as needed to move text further down or up */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the text horizontally */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    text-align: center;
+    
+  }
+  button:hover{
+    background-color: #115f57;
+    border-radius: 50px;
+    color: white;
+  }
+  
+  
